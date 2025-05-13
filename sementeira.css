@@ -1,0 +1,31 @@
+footer{
+    background-color: black;
+}
+h5{ color: aliceblue;}
+header{background-color: rgb(154, 47, 255);}
+h1{text-align: center;}
+h5{text-align: center;}
+nav{text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;}
+a{text-decoration: none;}
+#hdofooter{
+    color:white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    }
+    div{
+        width: 400px;
+        height: 485px;
+        background-color: rgb(154, 47, 255);
+        margin: 50px auto;
+        text-align: center;
+    }
+    ul{display: inline-block;}
+    #h3atrativos{border: 10px solid #ffffff;
+        border-radius: 80px;}
+        h2{ text-align: center;
+            margin-top: 30px;}
