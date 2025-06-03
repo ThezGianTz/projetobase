@@ -27,13 +27,48 @@ if (idade<12){
 } else{
     alert("Assista filme Sênior")
 }*/
-let pontuacao = Number(prompt("Digite sua pontuação: "))
-if (pontuacao <=1000){
-    alert("Você é Novato e terá 100 XP")
-}else if (pontuacao >=1001 && pontuacao<=5000){
-    alert("Você é Aprendiz e terá 500 XP")
-}else if (pontuacao >=5001 && pontuacao<=10000){
-    alert("Você é Expert e terá 1000 XP")
-} else{
-     alert("Você é Mestre e terá 2000 XP")
+alert(
+    "|O valor do plano básico é: 25R$\n|O valor do plano Premiun é: 40R$ \n|O valor do plano Ultra é: 60R$"
+    
+)
+let valorbasico =  25;
+let valorpremium = 40;
+let valorultra = 60;
+let telas3a4 = 5;
+let telasmaisde4 = 7.50;
+
+let tipoassinatura = prompt("Digite a sua assinatura: ")
+let quantitelas = prompt("Digite a quantidade de telas que deseja: ")
+if (tipoassinatura == "básico"){
+    if(quantitelas >=1 && quantitelas <=2){
+        alert("Seu plano terá o valor de: R$"+valorbasico)
+    }
+    else if(quantitelas >=3 && quantitelas <=4){
+        alert("Seu plano terá o valor de: R$"+(valorbasico+telas3a4))
+    }
+    else {
+    alert("Seu plano terá o valor de: R$"+(valorbasico+telasmaisde4))
+    }
+}
+else if (tipoassinatura == "premium"){
+      if(quantitelas >=1 && quantitelas <=2){
+        alert("Seu plano terá o valor de: R$"+valorpremium)
+    }
+    else if(quantitelas >=3 && quantitelas <=4){
+        alert("Seu plano terá o valor de: R$"+(valorpremium+telas3a4))
+    }
+    else {
+    alert("Seu plano terá o valor de: R$"+(valorpremium+telasmaisde4))
+    }
+}
+else{
+    if(quantitelas >=1 && quantitelas <=2){
+        alert("Seu plano terá o valor de: R$"+valorultra)
+    }
+    else if(quantitelas >=3 && quantitelas <=4){
+        alert("Seu plano terá o valor de: R$"+(valorultra+telas3a4))
+    }
+    else {
+    alert("Seu plano terá o valor de: R$"+(valorultra+telasmaisde4))
+    }
 }
