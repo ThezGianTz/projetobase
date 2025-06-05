@@ -26,49 +26,52 @@ if (idade<12){
     alert("Assista filme Adulto")
 } else{
     alert("Assista filme Sênior")
-}*/
-alert(
-    "|O valor do plano básico é: 25R$\n|O valor do plano Premiun é: 40R$ \n|O valor do plano Ultra é: 60R$"
-    
-)
-let valorbasico =  25;
-let valorpremium = 40;
-let valorultra = 60;
-let telas3a4 = 5;
-let telasmaisde4 = 7.50;
+}
 
-let tipoassinatura = prompt("Digite a sua assinatura: ")
-let quantitelas = prompt("Digite a quantidade de telas que deseja: ")
-if (tipoassinatura == "básico"){
-    if(quantitelas >=1 && quantitelas <=2){
-        alert("Seu plano terá o valor de: R$"+valorbasico)
+let valordobasico = 25;
+let valordopremium = 40;
+let valordoultra = 60;
+let tresa4 = 5;
+let maisque4 = 7.50;
+
+let tipodeassinatura = prompt("Digite o nome da assinatura que você deseja: ")
+let quantitelas = prompt("Digite quantas telas você terá: ")
+if (tipodeassinatura == "básico"){
+    if (quantitelas>=3 && quantitelas<=4){
+        alert("O seu plano será R$ "+(valordobasico+tresa4))
+    } else if (quantitelas>=4){
+        alert("O seu plano será R$ "+(valordobasico+maisque4))
+    } else {
+        alert("O seu plano será R$ "+valordobasico)
     }
-    else if(quantitelas >=3 && quantitelas <=4){
-        alert("Seu plano terá o valor de: R$"+(valorbasico+telas3a4))
+} else if (tipodeassinatura == "premium"){
+    if (quantitelas>=3 && quantitelas<=4){
+        alert("O seu plano será R$ "+(valordopremium+tresa4))
+    } else if (quantitelas>=4){
+        alert("O seu plano será R$ "+(valordopremium+maisque4))
+    } else {
+        alert("O seu plano será R$ "+valordopremium)
     }
-    else {
-    alert("Seu plano terá o valor de: R$"+(valorbasico+telasmaisde4))
-    }
-}
-else if (tipoassinatura == "premium"){
-      if(quantitelas >=1 && quantitelas <=2){
-        alert("Seu plano terá o valor de: R$"+valorpremium)
-    }
-    else if(quantitelas >=3 && quantitelas <=4){
-        alert("Seu plano terá o valor de: R$"+(valorpremium+telas3a4))
-    }
-    else {
-    alert("Seu plano terá o valor de: R$"+(valorpremium+telasmaisde4))
-    }
-}
-else{
-    if(quantitelas >=1 && quantitelas <=2){
-        alert("Seu plano terá o valor de: R$"+valorultra)
-    }
-    else if(quantitelas >=3 && quantitelas <=4){
-        alert("Seu plano terá o valor de: R$"+(valorultra+telas3a4))
-    }
-    else {
-    alert("Seu plano terá o valor de: R$"+(valorultra+telasmaisde4))
-    }
-}
+}  else{
+    if (quantitelas>=3 && quantitelas<=4){
+        alert("O seu plano será R$ "+(valordoultra+tresa4))
+    } else if (quantitelas>=4){
+        alert("O seu plano será R$ "+(valordoultra+maisque4))
+    } else {
+        alert("O seu plano será R$ "+valordoultra)
+    }}
+
+let daysOfWeek = ["Raquel", "Maraisa",80,40,10]
+console.log(daysOfWeek[1])
+console.log(daysOfWeek.length)
+let nomedoaluno = prompt("Digite o nome do novo aluno: ")
+daysOfWeek.unshift(nomedoaluno)
+daysOfWeek.unshift("Miguel", "Alysson", "Arthur", "Nayline")
+daysOfWeek.push("João")
+daysOfWeek.pop()
+daysOfWeek.shift()
+daysOfWeek.sort()
+daysOfWeek.reverse()
+alert("Os alunos atualmente matriculados são: "+daysOfWeek)
+alert(daysOfWeek.indexOf("Arthur"))*/
+
