@@ -17,16 +17,7 @@ alert ("Seu novo salário é: "+salario)
     alert ("Seu novo salário é: "+salario)
 }
 
-let idade = Number(prompt("Digite sua idade"))
-if (idade<12){
-    alert("Assista filme Infantil")
-}else if (idade>=12 && idade <=17){
-    alert("Assista filme Teen")
-}else if (idade>=18 && idade<=60){
-    alert("Assista filme Adulto")
-} else{
-    alert("Assista filme Sênior")
-}
+
 
 let valordobasico = 25;
 let valordopremium = 40;
@@ -73,5 +64,38 @@ daysOfWeek.shift()
 daysOfWeek.sort()
 daysOfWeek.reverse()
 alert("Os alunos atualmente matriculados são: "+daysOfWeek)
-alert(daysOfWeek.indexOf("Arthur"))*/
+alert(daysOfWeek.indexOf("Arthur"))
 
+function filmes(){
+let idade = Number(prompt("Digite sua idade"))
+if (idade<12){
+    alert("Assista filme Infantil")
+}else if (idade>=12 && idade <=17){
+    alert("Assista filme Teen")
+}else if (idade>=18 && idade<=60){
+    alert("Assista filme Adulto")
+} else{
+    alert("Assista filme Sênior")
+}
+}
+filmes()
+function dobrarNumero(numero){
+ return numero * 2
+}
+let resultado = dobrarNumero(20)
+alert("O resultado é: "+ resultado)
+
+function cumprimentar(nome){
+    alert("Oi, "+nome+" tenha um excelente dia!")
+}
+let nomedousuario = prompt("Digite o seu nome:")
+cumprimentar(nomedousuario)
+function contagemRegressiva(numero){
+    alert(numero)
+    if (numero ===0){
+    alert("Chegou")
+    }
+    
+    contagemRegressiva(numero-1)
+}
+contagemRegressiva(5)*/
