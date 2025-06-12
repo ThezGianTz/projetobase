@@ -17,8 +17,6 @@ alert ("Seu novo salário é: "+salario)
     alert ("Seu novo salário é: "+salario)
 }
 
-
-
 let valordobasico = 25;
 let valordopremium = 40;
 let valordoultra = 60;
@@ -50,7 +48,18 @@ if (tipodeassinatura == "básico"){
         alert("O seu plano será R$ "+(valordoultra+maisque4))
     } else {
         alert("O seu plano será R$ "+valordoultra)
-    }}
+    }
+
+        let idade = Number(prompt("Digite sua idade"))
+if (idade<12){
+    alert("Assista filme Infantil")
+}else if (idade>=12 && idade <=17){
+    alert("Assista filme Teen")
+}else if (idade>=18 && idade<=60){
+    alert("Assista filme Adulto")
+} else{
+    alert("Assista filme Sênior")
+}
 
 let daysOfWeek = ["Raquel", "Maraisa",80,40,10]
 console.log(daysOfWeek[1])
@@ -66,36 +75,43 @@ daysOfWeek.reverse()
 alert("Os alunos atualmente matriculados são: "+daysOfWeek)
 alert(daysOfWeek.indexOf("Arthur"))
 
-function filmes(){
-let idade = Number(prompt("Digite sua idade"))
-if (idade<12){
-    alert("Assista filme Infantil")
-}else if (idade>=12 && idade <=17){
-    alert("Assista filme Teen")
-}else if (idade>=18 && idade<=60){
-    alert("Assista filme Adulto")
-} else{
-    alert("Assista filme Sênior")
+let numberfinal = 0
+alert("Vamos calcular os números!!")
+let number = Number(prompt("Digite o número que deseja somar: (Digite 0 se quiser parar!!)"))
+while (number !=0){
+     number = Number(prompt("Digite o próximo número:"))
+    numberfinal = numberfinal+number
 }
-}
-filmes()
-function dobrarNumero(numero){
- return numero * 2
-}
-let resultado = dobrarNumero(20)
-alert("O resultado é: "+ resultado)
+alert ("O cálculo final é: " + numberfinal)*/
 
-function cumprimentar(nome){
-    alert("Oi, "+nome+" tenha um excelente dia!")
+//Sem parâmetro 
+/*function saudar(){
+    alert ("Desejo um boa navegação no nosso site!")
 }
-let nomedousuario = prompt("Digite o seu nome:")
-cumprimentar(nomedousuario)
+saudar()
+
+//Com Return e Parâmetro 
+
+function dobrarNumero(numero){
+    return numero * 2
+}
+let resultado = dobrarNumero(888)
+alert ("O cálculo do dobro do número"+resultado)
+//Com Parâmetro
+function Cumprimentar(nome){
+    alert("Olá, "+nome+" como está seu dia?")
+}
+let nomedoaluno = prompt("Digite o seu nome jovem: ")
+Cumprimentar(nomedoaluno)
+
+// Recursiva
 function contagemRegressiva(numero){
-    alert(numero)
-    if (numero ===0){
-    alert("Chegou")
+    console.log(numero)
+    if(numero ===0){
+        console.log("Chegou");
+        return ;
     }
-    
     contagemRegressiva(numero-1)
 }
-contagemRegressiva(5)*/
+contagemRegressiva(10)*/
+
