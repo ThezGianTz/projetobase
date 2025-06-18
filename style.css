@@ -18,7 +18,7 @@ div{
     width: 400px;
     height: 485px;
     background-color: rgb(154, 47, 255);
-    margin: 50px auto;
+    margin: 42px auto;
     text-align: center;
 }
 ol{display: inline-block;}
@@ -28,3 +28,16 @@ ol{display: inline-block;}
 }
 h2{ text-align: center;
     margin-top: 30px;}
+#acesso{
+    width: 80px;
+    height:40px;
+    color:white;
+}
+#adoheader{
+    color:white;
+    text-decoration: none;
+}
+     footer{
+        position: absolute;
+        left: 0; bottom: 0; width: 100%
+    }

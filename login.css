@@ -10,27 +10,31 @@ nav{text-align: center;
     display: flex;
     justify-content: space-evenly;}
 a{text-decoration: none;}
-#hdofooter{
+#pdofooter{
     color:white;
+    text-align: center;
 }
+
 * {
     margin: 0;
     padding: 0;
     }
-    div{
-        width: 400px;
-        height: 500px;
-        background-color: rgb(154, 47, 255);
-        margin: 50px auto;
+    h3{
         text-align: center;
+        font-family: monospace;
+        margin-top: 35px;
     }
-    ul{display: inline-block;}
-    #h3atrativos{border: 10px solid #ffffff;
-        border-radius: 80px;}
-        h2{ text-align: center;
-            margin-top: 30px;}
 
-             footer{
+    fieldset{
+        margin: 40px auto 0 auto;
+        display: block;
+        min-width: 300px;
+        padding: 20px;
+        text-align: center;
+       
+    }
+    footer{
         position: absolute;
         left: 0; bottom: 0; width: 100%
     }
+    
